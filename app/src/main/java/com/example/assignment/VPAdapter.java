@@ -1,6 +1,7 @@
 package com.example.assignment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -11,6 +12,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -63,6 +65,15 @@ public class VPAdapter extends RecyclerView.Adapter<VPAdapter.ViewHolder> {
         //holder.cardView.setCardBackgroundColor(gd.getColor());
         holder.relativeLayout.setBackground(gd);
 
+        holder.button.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, FruitList.class);
+                context.startActivity(intent);
+            }
+        });
+
     }
 
 //    private byte[] getImage(String imageName) {
@@ -86,12 +97,14 @@ public class VPAdapter extends RecyclerView.Adapter<VPAdapter.ViewHolder> {
         ImageView imageView;
         TextView heading, desc;
         RelativeLayout relativeLayout;
+        Button button;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.imageView);
             heading = itemView.findViewById(R.id.heading);
             desc = itemView.findViewById(R.id.desc);
             relativeLayout = itemView.findViewById(R.id.relativeLayout);
+            button = itemView.findViewById(R.id.stBtn);
         }
     }
 
