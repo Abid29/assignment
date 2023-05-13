@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         vp = findViewById(R.id.pager);
         fruitArrayList = new Util().getAllFruits();
 
-        VPAdapter adapter = new VPAdapter(fruitArrayList);
+        VPAdapter adapter = new VPAdapter(fruitArrayList, this);
         vp.setAdapter(adapter);
     }
 }
