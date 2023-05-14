@@ -57,7 +57,6 @@ public class VPAdapter extends RecyclerView.Adapter<VPAdapter.ViewHolder> {
                 .into(holder.imageView);
 
         int[] colors = {Color.parseColor(fruit.getGradientColors().get(0)), Color.parseColor(fruit.getGradientColors().get(1))};
-
         //create a new gradient color
         GradientDrawable gd = new GradientDrawable(GradientDrawable.Orientation.TOP_BOTTOM, colors);
         gd.setCornerRadius(0f);
@@ -97,7 +96,7 @@ public class VPAdapter extends RecyclerView.Adapter<VPAdapter.ViewHolder> {
         ImageView imageView;
         TextView heading, desc;
         RelativeLayout relativeLayout;
-        Button button;
+        TextView button;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.imageView);

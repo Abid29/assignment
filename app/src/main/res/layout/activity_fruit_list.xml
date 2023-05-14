@@ -10,13 +10,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Fruits"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="12dp"
         android:id="@+id/dddDdd"
-        android:textSize="38sp"
-        android:textColor="@color/black"/>
+        android:textSize="33sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="15dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/dddDdd"
         android:id="@+id/recView"/>
