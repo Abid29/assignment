@@ -49,15 +49,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/desc"
-                android:layout_marginTop="18dp"
-                android:text="Start "
+                android:layout_marginTop="20dp"
+                android:padding="7dp"
+                android:text="Start"
                 android:drawableRight="@drawable/baseline_arrow_circle_right_24"
-                android:textSize="20sp"
+                android:textSize="17sp"
                 android:layout_centerHorizontal="true"
                 android:textColor="@android:color/white"
-                android:background="@android:color/transparent"
-                android:id="@+id/stBtn"
-                app:cardCornerRadius="10dp"/>
+                android:background="@drawable/rounded_border"
+                android:id="@+id/stBtn"/>
 
         </RelativeLayout>
     </LinearLayout>
